@@ -26,6 +26,7 @@ def solve(x,y):
                     visit[nx][ny] = 1
                     q.append([nx,ny])
 
+
 cnt = 0
 for i in range(n):
     for j in range(n):
