@@ -1,7 +1,19 @@
-# test
-# testtest
+# 문제 14501 파이썬
 
-# 0411 문제 풀이 예정\
+n = int(input())
+t = []
+p = []
+dp = [0]*(n+1)
 
+for _ in range(n):
+    a, b = map(int, input().split())
+    t.append(a)
+    p.append(b)
 
-이게 왜 안되는지 모르겠다
+for i in range(n-1, -1, -1):
+    if i + t[i] > n:
+        dp[i] = dp[i+1]
+    else:
+        dp[i] = max(dp[i+1], p[i]+dp[i +t[i]])
+
+print(dp[0])
