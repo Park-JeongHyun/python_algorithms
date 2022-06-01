@@ -22,4 +22,8 @@ for i in a:
                     q.appendleft(q.pop())
                     cnt += 1
 
+<<<<<<< HEAD
 print(cnt)
+=======
+print(cnt)
+>>>>>>> 7bb9a4f14e477ca1105aa14abc7f13dafc57ba8f
