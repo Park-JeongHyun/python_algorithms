@@ -1,5 +1,5 @@
-n = int(input())
+# 문제 2914 저작권
 
-for _ in range(n):
-    print(n - n//2)
-    print(n//2)
+a, i = map(int, input().split())
+
+print(a * (i - 1) + 1)
